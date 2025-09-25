@@ -11,6 +11,8 @@
 <body class="container mt-5">
     <h1>Formulario com GET</h1>
 
+
+    // O method GET envia os dados pela URL, visivel para o usuario
     <form method="GET" action="recebe-form.php">
         <div class="mb-3">
             <label for="nome" class="form-label">Digite seu nome:</label>

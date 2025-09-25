@@ -11,6 +11,7 @@
 <body class="container mt-5">
     <h1>Formulario com POST</h1>
 
+
     <form method="POST" action="recebe-form.php">
         <div class="mb-3">
             <label for="nome" class="form-label">Digite seu nome:</label>

@@ -1,31 +1,32 @@
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['palpite'])) {
+        echo "<h1>Campos enviados por POST:</h1>";
+        echo "Seu Endereço é: " . $_POST['palpite'] . "<br>";
+
+    } else {
+        echo "<p style='color:red;'>Não veio nada por POST!</p>";
+    }
+} else {
+    echo "<p style='color:red;'>Não veio nada por POST!</p>";
+}
+?>
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Adivinha</title>
 </head>
-<body class="container mt-5 " >
-    <?= "Olá Mundo!" ?>
-    <p>Para iniciar o PHP em uma pasta: </p>
-    <code> 
-        php -S localhost:8000
-    </code> 
-    
-    <br>
-    <br>
-    <a href="get-form.php">Formulario com GET</a>
-    <br>
-    <a href="post-form.php">Formulario com POST</a>
 
-    <div class="mt-5">
-        <a href="adivinha.php" class="btn btn-primary">Jogo da Adivinhação</a>
-    
-    </div>
-
+<body class="container mt-5">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
